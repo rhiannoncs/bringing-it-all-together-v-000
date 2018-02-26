@@ -56,6 +56,6 @@ class Dog
       self.update
     else
       sql = <<-SQL
-        INSERT 
+        INSERT INTO dogs ()
   end
 end
