@@ -81,4 +81,8 @@ class Dog
     
     dog = new_from_db(row[0])
   end
+  
+  def self.find_or_create_by(name:, breed:)
+    
+  end
 end
