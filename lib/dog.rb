@@ -8,6 +8,7 @@ class Dog
   end
   
   def self.create_table
+    drop_table 
     sql = <<-SQL
       CREATE TABLE dogs (
         id INTEGER PRIMARY KEY,
