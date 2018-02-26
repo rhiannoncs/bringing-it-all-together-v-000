@@ -89,7 +89,7 @@ class Dog
     
     row = DB[:conn].execute(sql, name, breed)
     
-    if row
+    if row[0]
       new_from_db(row[0])
     else
       create(name: name, breed: breed)
