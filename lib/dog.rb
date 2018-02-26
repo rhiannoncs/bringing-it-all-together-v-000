@@ -67,8 +67,8 @@ class Dog
     self
   end
   
-  def self.create(name, breed)
-    dog = new(name, breed)
+  def self.create(attribute_hash)
+    dog = new(attribute_hash[0], attribute_hash[1])
     dog.save
   end
 end
