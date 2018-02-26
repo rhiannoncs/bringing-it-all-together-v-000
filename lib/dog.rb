@@ -40,6 +40,7 @@ class Dog
     
     row = DB[:conn].execute(sql, name)
     dog = new_from_db(row)
+    dog
   end
   
   def update
